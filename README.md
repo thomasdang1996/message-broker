@@ -1,6 +1,6 @@
 ## MESSAGE BROKER
 ### How to run Message Broker
-1) clone project: `git clone https://github.com/thomasdang1996/message-broker.git`
+1) Clone project: `git clone https://github.com/thomasdang1996/message-broker.git`
 2) Install and run [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 3) Go to project file, run command `docker-compose -f up`. To stop, use `docker-compose down`
 4) Ports of each component:
@@ -23,5 +23,5 @@ For more info about Schema Registry API, see [documentation](https://docs.conflu
 
 ### Other projects
 After adding new schema to the registry, clone and run following projects:
-- [PearStore BE](https://github.com/thomasdang1996/pear-store-be.git) - Main project
+- [PearStore BE](https://github.com/thomasdang1996/pear-store-be.git) - main project
 - [AccountManager BE](https://github.com/thomasdang1996/account-manager-be.git) - for receiving message payload from PearStore BE
