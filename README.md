@@ -2,7 +2,7 @@
 ### How to run Message Broker
 1) Clone project: `git clone https://github.com/thomasdang1996/message-broker.git`
 2) Install and run [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-3) Go to project file, run command `docker-compose -f up`. To stop, use `docker-compose down`
+3) Go to project file, run command `docker-compose up`. To stop, use `docker-compose down`
 4) Ports of each component:
     - http://localhost:8081 - Schema registry (avro schema management)
     - http://localhost:2181 - Zookeeper (leadership management)
