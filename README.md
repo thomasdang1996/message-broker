@@ -2,8 +2,9 @@
 ### How to run Message Broker
 1) Clone project: `git clone https://github.com/thomasdang1996/message-broker.git`
 2) Install and run [Docker Desktop](https://www.docker.com/products/docker-desktop/)
-3) Go to project file, run command `docker-compose up`. To stop, use `docker-compose down`
-4) Ports of each component:
+3) Go to project file, run command `docker-compose up`. This will pull images and run containers(this could take 5-10 minutes). 
+4) To stop containers and remove images, use `docker compose down --rmi all`
+5) Ports of each component:
     - http://localhost:8081 - Schema registry (avro schema management)
     - http://localhost:2181 - Zookeeper (leadership management)
     - http://localhost:9092 - Kafka broker (topic management)
