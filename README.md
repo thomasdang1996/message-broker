@@ -10,7 +10,7 @@
     - http://localhost:9092 - Kafka broker (topic management)
 
 ### Schema Registry
-To receive and send messages, add a new schema to the registry via REST (Postman is highly recommended).\
+To receive and send messages, add a new schema to the registry via REST (Use [Postman](https://www.postman.com/) or other API tools).\
 For this project, add `CreateAccountPayload`, `AccountCreated` and `AccountCreationFailed`.\
 
 Example of `CreateAccountPayload`;
