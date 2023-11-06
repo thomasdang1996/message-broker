@@ -10,13 +10,30 @@
     - http://localhost:9092 - Kafka broker (topic management)
 
 ### Schema Registry
-To receive and send messages, add a new schema to the registry via REST. For this project, add `CreateAccountPayload`:
+To receive and send messages, add a new schema to the registry via REST (Postman is highly recommended).\
+For this project, add `CreateAccountPayload`, `AccountCreated` and `AccountCreationFailed`.\
+
+Example of `CreateAccountPayload`;
 ```
 POST 
 url: http://localhost:8081/subjects/CreateAccountPayload/versions   
 Request body:
    {
-      "schema": "{\"type\":\"record\",\"name\":\"CreateAccountPayload\",\"namespace\":\"avrogenerated.accountmanager\",\"fields\":[{\"name\":\"username\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"email\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}",
+      "schema": "{
+         \"type\":\"record\",
+         \"name\":\"CreateAccountPayload\",
+         \"namespace\":\"avrogenerated.accountmanager\",
+         \"fields\":[{
+            \"name\":\"username\",
+            \"type\":{
+               \"type\":\"string\",\"avro.java.string\":\"String\"}
+            },
+            {
+               \"name\":\"email\",
+               \"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}
+            }
+         ]
+      }",
       "schemaType": "AVRO"
    }
 ```
